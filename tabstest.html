@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<!-- Tab links -->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Resources</title>
+    <link rel="stylesheet" href="tabs.css" type="text/css" />
+
+  <body>
+      
+  <div class="tab">
+    <button class="tablinks" onclick="openResource(type, 'About')">About</button>
+    <button class="tablinks" onclick="openResource(type, 'Job Opportunities')">Job Opportunities</button>
+    <button class="tablinks" onclick="openResource(type, 'Health Information')">Health Information</button>
+    <button class="tablinks" onclick="openResource(type, 'Activities')">Activities</button>
+    <button class="tablinks" onclick="openResource(type, 'Provide Support')">Provide Support</button>
+  </div>
+  
+<!-- Tab content -->
+      
+  <div id="About" class="tabcontent">
+    <h2 align="center">Welcome to the HomeTogether Resources Site!</h2>
+    <p align="center">COVID-19 may have taken the world by storm, but we are working to take it back! We will get through this together.</p>
+    <p align="center">This website contains many helpful resources to assist you during this unprecedented time.</p>
+    <p align="center">Click on any of the tabs above to find related resources for that topic. Not sure where to start? Answer the question below to see which resource you need the most right now!</p>
+   
+    <form id="intro-question" action="/action_page.php" target="_self">
+      <fieldset>
+        <legend>Question:</legend>
+        <p>
+          How are you feeling today on a scale from 1-10, with 1 being healthy and 10 being very sick?
+          
+          <input class="input" name="scale-number">
+          <input type="submit" value="answer" />
+          <div class="Suggestion"></div>
+        
+        </p>
+      </fieldset>
+    </form>
+    <script> 
+    var numberInput = $(this).attr("answer");
+    $("intro-question").submit(function) {
+        if ($(this).attr("answer") >= "5" {
+          $(".Suggestion").html("Glad to hear you're well! I suggest looking at the Activities tab to find something to do.");
+        } else { 
+          $(".Suggestion").html("Oh no! Please check the Health Information tab for help!");
+        }
+      });
+    </script>
+
+  </div>
+    
+  <div id="Job Opportunities" class="tabcontent">
+    <h2>Secure Your Next Job!</h2>
+    <p>Use these websites to find employment:</p>
+    <ul>
+      <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+      <li><a href="https://www.indeed.com/q-Find-jobs.html" target="_blank">Indeed</a></li>
+      <li><a href="https://www.ziprecruiter.com/" target="_blank">ZipRecruiter</a></li>
+      <li><a href="https://www.glassdoor.com/index.htm" target="_blank">GlassDoor</a></li>
+    </ul>
+    <p>Here are 5 tips to be successful in your job hunt:</p>
+    <ol>
+      <li><strong>Apply, Apply, Apply!</strong></li>
+      <p>Block out a part of your daily schedule to apply to as many jobs as possible. Make sure to check the company if they're open to hiring or have frozen it.</p>
+      <li><strong>Create a Worthy Resume</strong></li>
+      <p>Resumes may be read by a software first, so be sure to be concise and check for any spelling errors. Have key buzz words and refer to successful resumes related to your field.</p>
+      <li><strong>Reach Out to Your Network</strong></li>
+      <p>Text, email, and/or call past employees/employers. Make a post on a recruitment social media site like LinkedIn and make sure your headline reflects your job search status + highlights key skills in your desired field.</p>
+      <li><strong>Be an Active Communicator</strong></li>
+      <p>After applying, send follow-up emails every week or two. Even if you don't get a reply right away, keep at it. Everyone has hundreds of emails that they can't reply to all the time, but they can still see the patterns. Have email templates to streamline this process.</p>
+      <li><strong>Don't Give Up! Plan Accordingly.</strong></li>
+      <p>Stay motivated. Reduce the amount you spend applying if necessary, but make sure to keep the daily habit. If your finances are strained, plan accordingly. Look for cost-saving methods and adjustments to your lifestyle and reach out for help. If you've already applied for unemployment and received your stimulus check, see if there are any support funds or organizations in your area.</p>
+    </ol>
+  </div>
+  
+  <div id="Health Information" class="tabcontent">
+    <h2>Guide to COVID-19</h2>
+    <p>Learn about the symptoms of COVID-19 and receive up-to-date news on the situation in your area!</p>
+    <ul>
+      <li><a href="https://coronavirus.jhu.edu/map.html" target="_blank">COVID-19 Dashboard World Map</a></li>
+      <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html" target="_blank">The CDC</a></li>
+      <li><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" target="_blank">WHO</a></li>
+      <li><a href="https://www.nih.gov/health-information/coronavirus" target="_blank">NIH</a></li>
+    </ul>
+    <p>Research on COVID-19 is important, but here are some key information you need to know:</p>
+    <ol>
+      <li><strong>No Current Vaccine & Symptoms Vary</strong></li>
+      <p>COVID-19 is a new coronavirus where symptoms can be mild or very severe.</p>
+      <li><strong>Stay Home</strong></li>
+      <p>If you feel sick, stay home, unless it's severe and needs medical attention.</p>
+      <li><strong>Need to Go Out? Protect Yourself & Social Distance</strong></li>
+      <p>Wear a mask and/or face covering that covers your nose and mouth. Avoid touching your face if you touch anything outside. Keep at least 6 feet away from other people.</p>
+      <li><strong>Wash Often and Disinfect the House</strong></li>
+      <p>After coming inside, wash your hands immediately. Wash often and do so for at least 20 seconds. Clean up the house to get rid of any germs and bacteria.</p>
+      <li><strong>Try Not to Visit Relatives, Especially Those At High Risk</strong></li>
+      <p>One of the toughest parts about being in quarantine is the inability to visit the people we want to and to go to the places we want to. Individuals who are older and/or have an underlying condition are at the most risk of experiencing severe symptoms if they contract COVID-19. Protect them by staying away as much as possible. If you need to visit or give them something, like food, try to do so while maintaining social distancing and taking cautious protective measures, such as wearing gloves while handling the goods to be given.</p>
+    </ol>
+  </div>
+  
+  <div id="Activities" class="tabcontent">
+    <h2>Curing Quarantine Boredom</h2>
+    <p>Bored in the house and in the house bored? Find something to do here! You might even discover a new hobby!</p>
+    
+    <h4>Outside, But Inside</h4>
+    <p>See the world from the comfort of your own home! Virtual tours galore!</p>
+    <ul>
+      <li><a href="https://artsandculture.google.com/partner/musee-dorsay-paris" target="_blank">Musée d’Orsay, Paris</a></li>
+      <li><a href="https://www.nps.gov/yell/learn/photosmultimedia/webcams.htm" target="_blank">Yellowstone National Park</a></li>
+      <li><a href="https://aqua.org/media/virtualtours/baltimore/index.html" target="_blank">National Aquarium</a></li>
+      <li><a href="https://www.visitorlando.com/en/things-to-do/virtual-tours/walt-disney-world-resort" target="_blank">Walt Disney World Resort</a></li>
+    </ul>
+    <h4>Media Entertainment</h4>
+    <p>Check out these streaming sites:</p>
+    <ul>
+      <li><a href="https://www.netflix.com/" target="_blank">Netflix</a></li>
+      <li><a href="https://www.hulu.com/" target="_blank">Hulu</a></li>
+      <li><a href="https://www.disneyplus.com/" target="_blank">Disney+</a></li>
+      <li><a href="https://www.hmnow.com/homepage" target="_blank">Hallmark Movies Now</a></li>
+    </ul>
+    <h4>Food</h4>
+    <p>Hone your culinary skills with recipes from these sources:</p>
+    <ul>
+      <li><a href="https://www.foodnetwork.com/" target="_blank">Food Network</a></li>
+      <li><a href="https://www.allrecipes.com" target="_blank">Allrecipes</a></li>
+      <li><a href="https://tasty.co/" target="_blank">Tasty</a></li>
+      <li><a href="https://www.bonappetit.com" target="_blank">Bon Appétit</a></li>
+    </ul>
+  </div>
+  
+  <div id="Provide Support" class="tabcontent">
+    <h2>Nonprofit Organizations Assisting Those In Need Due to COVID-19</h2>
+    <p>If you want to support the battle against COVID-19 and its effects, here are some nonprofits! Donate today to help continue their efforts! </p>
+    <h4>Food Assistance</h4>
+    <ul>
+      <li><a href="https://www.feedingamerica.org/" target="_blank">Feeding America</a></li>
+      <li><a href="https://wck.org/chefsforamerica" target="_blank">World Central Kitchen</a></li>
+    </ul>
+    <h4>Health Assistance</h4>
+    <ul>
+      <li><a href="https://www.ri.org/donate/" target="_blank">Relief International</a></li>
+      <li><a href="https://www.doctorswithoutborders.org/" target="_blank">Doctors Without Borders</a></li>
+    </ul>
+    <h4>Other Resource Assistance</h4>
+    <ul>
+      <li><a href="https://www.oxfamamerica.org/explore/emergencies/COVID-19/" target="_blank">Oxfam America</a></li>
+      <li><a href="https://www.globalgiving.org/projects/coronavirus-relief-fund/" target="_blank">Global Giving</a></li>
+    </ul>
+  </div>
+
+  <script src="tabs.js"></script>
+  </body>
+  </head>
+</html>
